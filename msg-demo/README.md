@@ -1,0 +1,5 @@
+## Building
+
+```sh
+aiken build
+```
