@@ -9,7 +9,6 @@ const Deployed_Cardano = require("../deployed/cardanoPreprod.json");
 
 
 const { Web3 } = require('web3');
-// 设置 provider（可以是 Infura、Alchemy、QuickNode 或本地节点）
 const web3 = new Web3('https://ethereum-sepolia-rpc.allthatnode.com/your-key');
 
 const PEER_CHAINID = 2147485463;  //cardano preprod chainId (BIP-44) 
@@ -18,7 +17,6 @@ const PEER_TOKENREMOTE_OUTBOUND = Deployed_Cardano.PEER_TOKENREMOTE_OUTBOUND;
 const LOCAL_TOKENHOME_SCADDRESS = Deployed_WanChain.TokenHome;
 
 const WAITTING_SECONDS = 30*1000;
-// 等待 N 秒
 function sleep(time) {
 	return new Promise(function (resolve, reject) {
 		setTimeout(function () {
