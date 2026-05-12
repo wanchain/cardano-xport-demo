@@ -11,7 +11,7 @@ const GXTOKEN_SCADDRESS = Deployed_WanChain.XToken;
 const LOCAL_TOKENHOME_SCADDRESS = Deployed_WanChain.TokenHome;
 const PEER_INBOUND_TOKENREMOTE = Deployed_Cardano.PEER_TOKENREMOTE_INBOUND;
 const WAITTING_SECONDS = 30*1000;
-// 等待 N 秒
+
 function sleep(time) {
 	return new Promise(function (resolve, reject) {
 		setTimeout(function () {
