@@ -47,24 +47,19 @@ contract DemoMsgCodec {
     }
 
     function concatenate(string memory a, string memory b) public pure returns (string memory) {
-        // 获取字符串长度
         uint256 aLength = bytes(a).length;
         uint256 bLength = bytes(b).length;
         
-        // 创建新字符串缓冲区
         bytes memory result = new bytes(aLength + bLength);
         
-        // 复制第一个字符串
         for (uint256 i = 0; i < aLength; i++) {
             result[i] = bytes(a)[i];
         }
         
-        // 复制第二个字符串
         for (uint256 i = 0; i < bLength; i++) {
             result[aLength + i] = bytes(b)[i];
         }
         
-        // 返回拼接结果
         return string(result);
     }
 
